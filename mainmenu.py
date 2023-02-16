@@ -9,18 +9,15 @@ def main_menu():
         print("------------------ Main Menu -----------------")
         print ("1. registering..")
         print ("2. login..")
-        print ("3. veiw all pro ..")
-        print ("4. Exit..")
+        print ("3. Exit..")
 
         choice = int(input("Enter your choice :) "))
         if choice == 1:
             registeration.registeration()
         elif choice == 2:
             login.login()
-            break
+            # break
         elif choice == 3:
-            view.view()
-        elif choice == 4:
             exit()
         else:
             print("Invalid choice please try again :)")

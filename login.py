@@ -45,20 +45,20 @@ def pro_menu(x):
     # print("2. View Project")
     print("2. Edit Project")
     print("3. Delete Project")
-    print("4. Exit")
-    
-    choice = input("Enter Your Choice:) ")
-    if choice == "1":
+    print("4. View Project")
+    print("5. Exit") 
+    choice = int(input("Enter Your Choice:) "))
+    if choice == 1:
         create.create(x)
         
-    elif choice == "2":
+    elif choice == 2:
         edit.edit(x)
     
-    elif choice == "3":
+    elif choice == 3:
         delete.delete(x)
-    
-    elif choice == "4":
+    elif choice == 4:
+        view.view()
+    elif choice == 5:
         exit(x)
     else:
         print("Invalid choice please try again :)")
-    os.system("clear")
