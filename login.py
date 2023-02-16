@@ -57,7 +57,7 @@ def pro_menu(x):
     elif choice == 3:
         delete.delete(x)
     elif choice == 4:
-        view.view()
+        view.view(x)
     elif choice == 5:
         exit(x)
     else:
